@@ -67,7 +67,7 @@ nav{background:var(--white);position:sticky;top:0;z-index:100;box-shadow:0 2px 2
 .svc::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:var(--blue);transform:scaleX(0);transition:transform .3s;transform-origin:left;}
 .svc:hover::before{transform:scaleX(1);}
 .svc:hover{transform:translateY(-4px);box-shadow:0 16px 48px rgba(0,0,0,.06);background:#fff;}
-.svc-icon{width:48px;height:48px;border-radius:10px;background:var(--blue-pale);color:var(--blue);display:flex;align-items:center;justify-content:center;margin-bottom:16px;font-size:1.3rem;}
+.svc-icon{width:48px;height:48px;border-radius:10px;background:var(--blue-pale);color:var(--blue);display:flex;align-items:center;justify-content:center;margin-bottom:16px;font-size:.85rem;font-weight:800;font-family:'Oswald',sans-serif;}
 .svc h3{font-family:'Oswald',sans-serif;font-size:1.1rem;font-weight:600;color:var(--blue-deep);text-transform:uppercase;margin-bottom:8px;letter-spacing:.02em;}
 .svc p{color:var(--gray);font-size:.85rem;line-height:1.6;}
 .svc ul{list-style:none;margin-top:8px;}
@@ -114,7 +114,7 @@ nav{background:var(--white);position:sticky;top:0;z-index:100;box-shadow:0 2px 2
 .contact-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
 .cc{background:#fff;border:1px solid rgba(0,0,0,.05);border-radius:14px;padding:32px 24px;text-align:center;transition:all .25s;}
 .cc:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(0,0,0,.05);}
-.cc-icon{width:52px;height:52px;border-radius:14px;background:var(--blue-pale);color:var(--blue);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:1.3rem;}
+.cc-icon{width:52px;height:52px;border-radius:14px;background:var(--blue-pale);color:var(--blue);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:.85rem;font-weight:800;font-family:'Oswald',sans-serif;}
 .cc h4{font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;color:var(--gray);font-weight:700;margin-bottom:8px;}
 .cc a,.cc p{color:var(--dark);font-weight:700;font-size:1rem;text-decoration:none;line-height:1.5;}
 .cc a:hover{color:var(--blue);}
@@ -149,8 +149,8 @@ footer{background:var(--blue-deep);padding:48px 24px 32px;}
 <!-- TOPBAR -->
 <div class="topbar">
 <div class="topbar-inner">
-<div><a href="tel:5058219391">&#9742; (505) 821-9391</a> &bull; <span>9980 Radcliffe Rd NW, Albuquerque, NM 87114</span></div>
-<div style="color:var(--gold);font-weight:700;font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;">&#9733; Emergency Services Available</div>
+<div><a href="tel:5058219391">(505) 821-9391</a> &bull; <span>9980 Radcliffe Rd NW, Albuquerque, NM 87114</span></div>
+<div style="color:var(--gold);font-weight:700;font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;">Emergency Services Available</div>
 </div>
 </div>
 
@@ -158,7 +158,7 @@ footer{background:var(--blue-deep);padding:48px 24px 32px;}
 <nav>
 <div class="nav-inner">
 <a href="#" class="logo">
-<div class="logo-icon">&#9733;</div>
+<img src="data:image/png;base64,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" alt="Hollywood Roofing LLC" style="height:56px;width:auto;">
 <div class="logo-text">Hollywood Roofing<span>Albuquerque, New Mexico</span></div>
 </a>
 <ul class="nav-links">
@@ -189,7 +189,7 @@ Free Estimate
 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.8.33 1.58.59 2.34a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.76.26 1.54.46 2.34.59A2 2 0 0 1 22 16.92z"/></svg>
 (505) 821-9391
 </a>
-<a href="#services" class="btn-outline">View Services &#8595;</a>
+<a href="#services" class="btn-outline">View Services</a>
 </div>
 </div>
 </section>
@@ -199,7 +199,7 @@ Free Estimate
 <div class="trust-inner">
 <div class="trust-item"><div class="trust-num">43</div><div class="trust-label">Years Experience</div></div>
 <div class="trust-item"><div class="trust-num">3</div><div class="trust-label">Generations Roofing</div></div>
-<div class="trust-item"><div class="trust-num">4.6&#9733;</div><div class="trust-label">Google Rating</div></div>
+<div class="trust-item"><div class="trust-num">4.6</div><div class="trust-label">Google Rating</div></div>
 <div class="trust-item"><div class="trust-num">132</div><div class="trust-label">Verified Reviews</div></div>
 <div class="trust-item"><div class="trust-num">FREE</div><div class="trust-label">Inspections & Estimates</div></div>
 </div>
@@ -215,7 +215,7 @@ Free Estimate
 <div class="svc-grid">
 
 <div class="svc fi">
-<div class="svc-icon">&#x1F3E0;</div>
+<div class="svc-icon">HR</div>
 <h3>Asphalt Shingles</h3>
 <p>Professional installation with industry-leading warranties.</p>
 <ul>
@@ -229,7 +229,7 @@ Free Estimate
 </div>
 
 <div class="svc fi">
-<div class="svc-icon">&#x1F527;</div>
+<div class="svc-icon">TPO</div>
 <h3>TPO Flat Roofing</h3>
 <p>Flat roof problems solved with premium TPO systems.</p>
 <ul>
@@ -243,7 +243,7 @@ Free Estimate
 </div>
 
 <div class="svc fi">
-<div class="svc-icon">&#x2B50;</div>
+<div class="svc-icon">M</div>
 <h3>Metal Roofing</h3>
 <p>50-year metal roofing with 20-year workmanship warranty.</p>
 <ul>
@@ -256,7 +256,7 @@ Free Estimate
 </div>
 
 <div class="svc fi">
-<div class="svc-icon">&#x1FA93;</div>
+<div class="svc-icon">T</div>
 <h3>Tile Repairs & Maintenance</h3>
 <p>Save your old tile roof and save thousands.</p>
 <ul>
@@ -269,7 +269,7 @@ Free Estimate
 </div>
 
 <div class="svc fi">
-<div class="svc-icon">&#x1F3A8;</div>
+<div class="svc-icon">C</div>
 <h3>Coatings</h3>
 <p>All coatings available for roof protection and longevity.</p>
 <ul>
@@ -281,7 +281,7 @@ Free Estimate
 </div>
 
 <div class="svc fi">
-<div class="svc-icon">&#x1F4A7;</div>
+<div class="svc-icon">G</div>
 <h3>Seamless Gutters</h3>
 <p>Best prices in town — guaranteed.</p>
 <ul>
@@ -293,7 +293,7 @@ Free Estimate
 </div>
 
 <div class="svc fi">
-<div class="svc-icon">&#x1F6A8;</div>
+<div class="svc-icon">E</div>
 <h3>Emergency Services</h3>
 <p>When your roof can't wait, neither do we.</p>
 <ul>
@@ -305,7 +305,7 @@ Free Estimate
 </div>
 
 <div class="svc fi">
-<div class="svc-icon">&#x1F3E2;</div>
+<div class="svc-icon">CM</div>
 <h3>Commercial Maintenance</h3>
 <p>Keep your commercial property protected year-round.</p>
 <ul>
@@ -317,7 +317,7 @@ Free Estimate
 </div>
 
 <div class="svc fi">
-<div class="svc-icon">&#x1F3E1;</div>
+<div class="svc-icon">RM</div>
 <h3>Residential Maintenance</h3>
 <p>Protect your home with regular roof maintenance.</p>
 <ul>
@@ -390,9 +390,9 @@ Free Estimate
 <!-- CONTACT -->
 <section class="contact-section" id="contact">
 <div class="contact-inner">
-<div class="cc fi"><div class="cc-icon">&#9742;</div><h4>Phone</h4><a href="tel:5058219391">(505) 821-9391</a></div>
-<div class="cc fi"><div class="cc-icon">&#9873;</div><h4>Address</h4><p>9980 Radcliffe Rd NW<br>Albuquerque, NM 87114</p></div>
-<div class="cc fi"><div class="cc-icon">&#9200;</div><h4>Service Area</h4><p>Albuquerque<br>& Surrounding Areas</p></div>
+<div class="cc fi"><div class="cc-icon">P</div><h4>Phone</h4><a href="tel:5058219391">(505) 821-9391</a></div>
+<div class="cc fi"><div class="cc-icon">A</div><h4>Address</h4><p>9980 Radcliffe Rd NW<br>Albuquerque, NM 87114</p></div>
+<div class="cc fi"><div class="cc-icon">S</div><h4>Service Area</h4><p>Albuquerque<br>& Surrounding Areas</p></div>
 </div>
 </section>
 
